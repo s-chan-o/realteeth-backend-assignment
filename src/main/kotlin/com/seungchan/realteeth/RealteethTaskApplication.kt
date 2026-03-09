@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class RealteethTaskApplication
 
 fun main(args: Array<String>) {
-	runApplication<RealteethTaskApplication>(*args)
+    runApplication<RealteethTaskApplication>(*args)
 }
