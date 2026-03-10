@@ -204,7 +204,7 @@ java -jar build/libs/realteeth-task-0.0.1-SNAPSHOT.jar
 
 ### 외부 시스템 연동 방식 및 선택 이유
 
-**Polling(Pull) 방식**을 채택했습니다.
+**Polling 방식**을 채택했습니다.
 
 Mock Worker는 webhook을 제공하지 않으므로 서버가 주기적으로 상태를 조회합니다. 두 개의 스케줄러가 역할을 분리하여 담당합니다.
 
