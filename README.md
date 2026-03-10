@@ -1,5 +1,7 @@
 # RealTeeth Backend Assignment
 
+Spring Boot + Kotlin 기반으로 외부 AI 이미지 처리 시스템을 안정적으로 연동하는 백엔드 서버를 설계하고 구현하는 과제입니다.
+
 ## 기술 스택
 
 - **Language**: Kotlin 2.2
