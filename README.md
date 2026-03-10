@@ -30,7 +30,7 @@ curl -X POST https://dev.realteeth.ai/mock/auth/issue-key \
 
 ---
 
-### Docker Compose로 실행 (권장)
+### Docker Compose로 실행
 
 MySQL 컨테이너와 애플리케이션을 함께 실행합니다.
 
