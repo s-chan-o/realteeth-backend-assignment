@@ -79,6 +79,15 @@ java -jar build/libs/realteeth-task-0.0.1-SNAPSHOT.jar
 ./gradlew test
 ```
 
+테스트는 외부 의존성 없이 H2 인메모리 DB로 실행됩니다.
+
+| 테스트 종류 | 위치 | 설명 |
+|------------|------|------|
+| Controller 단위 테스트 | `presentation/JobControllerTest` | `@WebMvcTest` — HTTP 레이어, 직렬화, 예외 핸들러 검증 |
+| Service 단위 테스트 | `service/impl/*Test` | Mock Repository — 비즈니스 로직, 예외 조건 검증 |
+| Scheduler 단위 테스트 | `scheduler/*Test` | Mock 서비스 — 스케줄러 호출 흐름 검증 |
+| 통합 테스트 | `integration/JobIntegrationTest` | `@SpringBootTest` + H2 — 실제 JPA 트랜잭션, 상태 전이, 중복 처리 검증 |
+
 ---
 
 ## API 명세
